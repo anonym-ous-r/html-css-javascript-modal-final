@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    letter-spacing: 1.3px;
+}
+
+header {
+    background-color: #34495e;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.nav-brand span {
+    color: #9859e6;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0.6em;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.login {
+    border: 1px solid #9859e6;
+    padding: 1em 1.8em;
+}
+
+.login:hover {
+    box-shadow: inset 5px 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.signup {
+    background-color: #9859e6;
+    padding: 1em 1.8em;
+}
+
+.signup:hover {
+    background-color: #9150e0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+        url("./server-location-web-hosting.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 8.5rem;
+    margin-bottom: 0.5em;
+}
+
+.hero button {
+    font-size: 1.5rem;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    border: 2px solid #9859e6;
+    border-radius: 3px;
+    padding: 1em 1.8em;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.hero button:hover {
+    background-color: #9859e6;
+    border: 2px solid #9859e6;
+}
+
+/* Modal start */
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.modal-inner {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: 20vh auto 5vh;
+    padding: 3.4em 3.2em 2em;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+.modal-close:hover {
+    color: #000;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+/* Modal end */
+
+/* Form start */
+.form h2 {
+    text-align: center;
+    margin-bottom: 1.4em;
+    font-size: 1.6rem;
+}
+
+.form-group {
+    margin-bottom: 1.6em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8em 1em;
+}
+
+.form-group input[type="submit"] {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: #9859e6;
+    padding: 1em 1.8em;
+    margin-top: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+/* Form end */

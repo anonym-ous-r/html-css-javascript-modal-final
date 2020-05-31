@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HSTBST</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="nav-brand">
+                <a href="#"
+                    ><i class="fas fa-server"></i> HST<span>BST</span></a
+                >
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="login" data-target="login-modal"
+                            >Login</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="signup" data-target="signup-modal"
+                            >Sign Up</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>The Best Web Hosting Company</h1>
+            <button>Get Hosting</button>
+        </div>
+
+        <!-- Login modal start -->
+        <div class="modal" id="login-modal">
+            <div class="modal-inner">
+                <div class="modal-close">&times;</div>
+
+                <form class="form">
+                    <h2>Login to your account</h2>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Your username"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="text"
+                            id="password"
+                            placeholder="Your password"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Login modal end -->
+
+        <!-- Signup modal start -->
+        <div class="modal" id="signup-modal">
+            <div class="modal-inner">
+                <div class="modal-close">&times;</div>
+
+                <form class="form">
+                    <h2>Signup Here</h2>
+                    <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Your fullname"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="Your email"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="text"
+                            id="password"
+                            placeholder="Your password"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Signup" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Signup modal end -->
+
+        <!-- scripts -->
+        <script
+            src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+            integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>
